@@ -12,7 +12,7 @@ h2 {
   text-align: center;
 }
 
-h3 {
+h3 { 
   font-size: 18px;
   font-weight: 500;
 }
@@ -31,8 +31,8 @@ section.alternate-background {
   color: #ecdbc9;
 }
 
-main img {
-  width: 100px;
+img {
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -61,23 +61,33 @@ header {
 
 .logo {
   font-family: "Tangerine", cursive;
-  font-size: 72px;
+  font-size: 90px;
   color: #ecdbc9;
 }
 
 header nav ul li {
   list-style-type: none;
+  font-size: 20px;
 }
 
 header nav ul li a {
   color: #ecdbc9;
   text-decoration: none;
   padding: 0 20px 0 0;
+
 }
 
 header nav ul li a:hover {
   color: #bdbdbd;
   text-decoration: none;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+}
+#menu li {
+  margin-bottom: 20px;
 }
 
 /* -------  Join Form ------- */
@@ -105,6 +115,11 @@ form button {
   width: 100%;
 }
 
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* -------  Footer ------- */
 
 footer {
@@ -118,3 +133,18 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 72px;
+  }
+  .group {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
